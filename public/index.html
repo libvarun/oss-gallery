@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title>OSS Gallery</title>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="https://github.com/Autodesk-Forge/learn.forge.viewmodels/raw/master/img/favicon.ico">
+  <!-- Common packages: jQuery, Bootstrap, jsTree -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.7/jstree.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/f08c9d4c90.js" crossorigin="anonymous"></script>
+  <!-- Autodesk Platform Services Viewer files -->
+  <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/style.min.css" type="text/css">
+  <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/viewer3D.min.js"></script>
+  <!-- this project files -->
+  <link href="css/main.css" rel="stylesheet" />
+  <script src="js/ApsViewer.js"></script>
+  <script src="js/main.js"></script>
+ 
+</head>
+
+<body>
+  <!-- Fixed navbar by Bootstrap: https://getbootstrap.com/examples/navbar-fixed-top/ -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav left">
+        <li>
+          <a href="http://developer.autodesk.com" target="_blank">
+            <img alt="Autodesk Platform Services" src="https://cdn.autodesk.io/logo/black/stacked.png" height="20">
+            <span style="">OSS Gallery</span>
+          </a>
+          
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="https://github.com/libvarun/rack-configurator" target="_blank">
+            <img alt="Autodesk Platform Services" src="/img/GitHub_Logo.png" height="25">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End of navbar -->
+  <div class="container-fluid fill">
+    <div class="row fill">
+      <div class="col-sm-2 fill left_panel"></div>
+      <div class="col-sm-8 fill nopadding">
+        <div class="container">
+          <p class="back"><span class="backbtn" style="cursor: pointer;"><i class="leftarrow"></i>Back</span></p>
+          <div class="gallery"></div>
+          <div class="objects"></div>
+          <div id="apsViewer"></div>
+        </div>
+      </div>
+      <div class="col-sm-2 fill left_panel"></div>
+    </div>
+  </div>
+  
+</body>
+
+</html>
